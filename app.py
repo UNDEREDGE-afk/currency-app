@@ -1,6 +1,12 @@
+import gdown
+import os
+
+if not os.path.exists("my_model.keras"):
+    url = "https://drive.google.com/uc?id=1hDJOiAQIwN-TpoPQVai5Wu1EcIPkr14S"
+    gdown.download(url, "my_model.keras", quiet=False)
 import streamlit as st
 import numpy as np
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
 
