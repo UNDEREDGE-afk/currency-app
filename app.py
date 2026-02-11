@@ -7,7 +7,6 @@ if not os.path.exists("my_model.keras"):
 import streamlit as st
 import numpy as np
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 # Define class labels
